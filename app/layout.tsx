@@ -1,26 +1,26 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Poppins } from "next/font/google"
-import "./globals.css"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
+import type React from 'react'
+import type { Metadata } from 'next'
+import { Poppins } from 'next/font/google'
+import './globals.css'
+import Header from '@/components/header'
+import Footer from '@/components/footer'
 
 // Fix the font weights by sorting them in ascending order
 const poppins = Poppins({
-  weight: ["300", "400", "500", "600", "700"],
-  subsets: ["latin"],
-  variable: "--font-poppins",
-  display: "swap",
+  weight: ['300', '400', '500', '600', '700'],
+  subsets: ['latin'],
+  variable: '--font-poppins',
+  display: 'swap'
 })
 
 export const metadata: Metadata = {
-  title: "COMFYHUG | Ladies Homewear",
-  description: "Premium ladies homewear for ultimate comfort and style.",
-    generator: 'v0.dev'
+  title: 'COMFYHUG | Ladies Homewear',
+  description: 'Premium ladies homewear for ultimate comfort and style.',
+  icons: '/images/tab-icon.png'
 }
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode
 }>) {
@@ -34,7 +34,5 @@ export default function RootLayout({
     </html>
   )
 }
-
-
 
 import './globals.css'
